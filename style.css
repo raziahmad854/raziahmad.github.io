@@ -28,13 +28,14 @@ header {
 nav {
     background-color: #333;
     overflow: hidden;
+    text-align: center;
+    padding: 1em;
 }
 
 nav a {
     text-decoration: none;
     padding: 20px;
-    text-align: center;
-    float: left;
+    font-size: larger;
     color: white;
 }
 
@@ -47,6 +48,11 @@ h2 {
     padding: 20px;
     font-family: cursive;
     font-style: italic;
+
+}
+
+h3 {
+    font-family: cursive;
 }
 
 section:nth-child(even) {
@@ -91,7 +97,7 @@ a:link {
 #img {
 
     display: block;
-    border-radius: 50%;
+    border-radius: 100%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -103,32 +109,32 @@ a:link {
 @media screen and (max-width: 600px) {
     iframe {
         height: 40vmin;
-        width: 40vmin;
+        width: 90vmin;
     }
 }
 
 ul {
     font-family: cursive;
     text-align: left;
-    list-style: circle;
+    list-style-type: square;
     line-height-step: 10px;
-    color: skyblue;
+    color: #333;
 }
 
 
 #one {
     font-family: cursive;
-    color: skyblue;
+    color: #333e;
 }
 
 #two {
     font-family: cursive;
-    color: skyblue;
+    color: #333;
 }
 
 #three {
     font-family: cursive;
-    color: skyblue;
+    color: #333;
 }
 
 .e {
@@ -138,12 +144,12 @@ ul {
 
 img {
     position: relative;
-    animation: move-right 2s linear 3;
+    animation: move-right 2s ease 3;
 }
 
 @keyframes move-right {
     from {
-        left: 0px;
+        left: -100px;
     }
 
     to {
@@ -157,7 +163,7 @@ img {
 }
 
 .hobby-button {
-    background-color: skyblue;
+    background-color: #333e;
     color: white;
     padding: 15px 32px;
     /* Padding */
@@ -173,12 +179,12 @@ img {
     /* Margin */
     cursor: pointer;
     /* Pointer cursor on hover */
-    animation: move 2s ease-in-out infinite;
+    animation: move-right 2s ease infinite;
     /* Animation */
     position: relative;
     border-radius: 50%;
     border-width: 5px;
-    border-color: #333;
+
 }
 
 @keyframes move {
